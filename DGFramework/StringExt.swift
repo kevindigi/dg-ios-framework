@@ -10,12 +10,12 @@ import Foundation
 
 extension String {
     
-    var localized: String {
+    public var localized: String {
         return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
     }
     
     // MARK:- Capitalization
-    func capitalizingFirstLetter() -> String {
+    public func capitalizingFirstLetter() -> String {
         let sentences = self.components(separatedBy: ".")
         var convertedSentences: [String] = []
         for sentence in sentences {
@@ -27,12 +27,12 @@ extension String {
         return convertedSentences.joined(separator: ".")
     }
     
-    mutating func capitalizeFirstLetter() {
+    public mutating func capitalizeFirstLetter() {
         self = self.capitalizingFirstLetter()
     }
     
     // MARK:- Convert to attributed string
-    func toAttributed(highlight: String, with attributes: [String: Any]) -> NSAttributedString {
+    public func toAttributed(highlight: String, with attributes: [String: Any]) -> NSAttributedString {
         let ranges = rangesOfString(s: highlight)
         let attributedString = NSMutableAttributedString(string:self)
         for range in ranges {
@@ -42,7 +42,7 @@ extension String {
         return attributedString
     }
     
-    func toAttributed(highlight: [String], with attributes: [String: Any]) -> NSAttributedString {
+    public func toAttributed(highlight: [String], with attributes: [String: Any]) -> NSAttributedString {
         let mutableAttributedString = NSMutableAttributedString(string:self)
         
         for s in highlight {
@@ -57,7 +57,7 @@ extension String {
     
     // MARK:- Find Range
     
-    func rangesOfString(s: String) -> [NSRange] {
+    public func rangesOfString(s: String) -> [NSRange] {
         let ranges: [NSRange]
         
         do {
@@ -77,7 +77,7 @@ extension String {
     
     // MARK:- Find height
     
-    func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
+    public func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
         let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
         let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
         
