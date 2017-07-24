@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E27CDF811F25CB09001A223F /* DGFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E27CDF7F1F25CB09001A223F /* DGFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E27CDF881F25CB28001A223F /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27CDF871F25CB28001A223F /* StringExt.swift */; };
+		E27CDFAA1F261AD6001A223F /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27CDFA91F261AD6001A223F /* StringExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E27CDF7C1F25CB09001A223F /* DGFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DGFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27CDF7F1F25CB09001A223F /* DGFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGFramework.h; sourceTree = "<group>"; };
 		E27CDF801F25CB09001A223F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E27CDF871F25CB28001A223F /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		E27CDFA91F261AD6001A223F /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,17 +50,17 @@
 			children = (
 				E27CDF7F1F25CB09001A223F /* DGFramework.h */,
 				E27CDF801F25CB09001A223F /* Info.plist */,
-				E27CDF891F25CB2D001A223F /* extension */,
+				E27CDFA81F261AD6001A223F /* extension */,
 			);
 			path = DGFramework;
 			sourceTree = "<group>";
 		};
-		E27CDF891F25CB2D001A223F /* extension */ = {
+		E27CDFA81F261AD6001A223F /* extension */ = {
 			isa = PBXGroup;
 			children = (
-				E27CDF871F25CB28001A223F /* StringExt.swift */,
+				E27CDFA91F261AD6001A223F /* StringExt.swift */,
 			);
-			name = extension;
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E27CDF881F25CB28001A223F /* StringExt.swift in Sources */,
+				E27CDFAA1F261AD6001A223F /* StringExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +309,7 @@
 				E27CDF861F25CB09001A223F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
