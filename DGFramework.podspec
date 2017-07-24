@@ -8,26 +8,21 @@
 
 Pod::Spec.new do |s|
   s.name         = "DGFramework"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "Digicorp iOS framework for Swift 3.0+"
-  s.description  = "Digicorp iOS framework for Swift 3.0+. It's the initial framework setup."
-
   s.homepage     = "http://www.digi-corp.com/"
-
   s.license      = "MIT"
   s.author       = { "Kevin B. Adesara" => "kevin.adesara@digi-corp.com" }
 
-  # s.platform     = :ios
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/kevindigi/dg-ios-framework.git", :tag => "#{s.version}" }
-  # s.source       = { :path => '.' }
 
-  s.source_files  = "DGFramework", "DGFramework/**/*.{h,m,swift}"
-  # s.exclude_files = "Classes/Exclude"
+  s.source_files  = 'DGFramework/DGFramework.h'
+
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
 
-  s.subspec 'extension' do |ss|
-    ss.source_files = 'DGFramework/extension/*.{swift}'
+  s.subspec 'Extension' do |ss|
+    ss.source_files = 'DGFramework/extension'
   end
 
 end
