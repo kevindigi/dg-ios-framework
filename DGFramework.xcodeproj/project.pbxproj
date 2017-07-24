@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E27CDF811F25CB09001A223F /* DGFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E27CDF7F1F25CB09001A223F /* DGFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E27CDFAA1F261AD6001A223F /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27CDFA91F261AD6001A223F /* StringExt.swift */; };
+		E27CDFAC1F261B34001A223F /* DGFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E27CDFAB1F261B34001A223F /* DGFramework.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		E27CDF7F1F25CB09001A223F /* DGFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGFramework.h; sourceTree = "<group>"; };
 		E27CDF801F25CB09001A223F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E27CDFA91F261AD6001A223F /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		E27CDFAB1F261B34001A223F /* DGFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DGFramework.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXGroup;
 			children = (
 				E27CDF7E1F25CB09001A223F /* DGFramework */,
+				E27CDFAB1F261B34001A223F /* DGFramework.podspec */,
 				E27CDF7D1F25CB09001A223F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27CDFAC1F261B34001A223F /* DGFramework.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

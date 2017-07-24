@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "DGFramework"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "Digicorp iOS framework for Swift 3.0+"
   s.description  = "Digicorp iOS framework for Swift 3.0+. It's the initial framework setup."
 
