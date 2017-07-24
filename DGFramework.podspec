@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "DGFramework"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "Digicorp iOS framework for Swift 3.0+"
   s.description  = "Digicorp iOS framework for Swift 3.0+. It's the initial framework setup."
 
@@ -25,5 +25,9 @@ Pod::Spec.new do |s|
   s.source_files  = "DGFramework", "DGFramework/**/*.{h,m,swift}"
   # s.exclude_files = "Classes/Exclude"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
+
+  s.subspec 'extension' do |ss|
+    ss.source_files = 'DGFramework/extension/**/*.{swift}'
+  end
 
 end
